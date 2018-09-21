@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/gr_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/gr_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gr_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:id="@+id/gr_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60000VND"
+            android:textSize="18sp"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="1"
+                android:layout_toRightOf="@id/btn1"
+                />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btn2"
+                android:text="+"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="ADD"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
